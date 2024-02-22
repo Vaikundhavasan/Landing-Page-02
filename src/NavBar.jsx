@@ -17,15 +17,17 @@ const NavBar = () => {
           onClick={() => setIsMenuClicked(!isMenuClicked)}
         />
         {isMenuClicked ? (
-          <div className="absolute flex flex-col gap-5 mt-5 w-52 h-screen z-20 backdrop-brightness-50">
-            <h1 className="bg-red-500">Home</h1>
-            <h1 className="hover:text-orange-300 flex justify-center items-center gap-2">
-              About us <IoMdArrowDropdown />
-            </h1>
-            <h1 className="hover:text-orange-300">Services</h1>
-            <h1 className="hover:text-orange-300">Gallery</h1>
-            <h1 className="hover:text-orange-300">Pricing</h1>
-            <h1 className="hover:text-orange-300">Contact</h1>
+          <div className="absolute w-screen h-screen z-20 backdrop-brightness-50">
+            <div className="w-52 flex flex-col gap-5 mt-5">
+              <h1 className="bg-red-500">Home</h1>
+              <h1 className="hover:text-orange-300 flex justify-center items-center gap-2">
+                About us <IoMdArrowDropdown />
+              </h1>
+              <h1 className="hover:text-orange-300">Services</h1>
+              <h1 className="hover:text-orange-300">Gallery</h1>
+              <h1 className="hover:text-orange-300">Pricing</h1>
+              <h1 className="hover:text-orange-300">Contact</h1>
+            </div>
           </div>
         ) : (
           ""
